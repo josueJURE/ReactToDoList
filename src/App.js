@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [item, setItem] = useState("");
+
+  function handleChange(event) {
+    var newValue = event.target.value;
+    return setItem(newValue);
+  }
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>My to-do list</h1>
+    <input value={item} onChange={handleChange} placeholder="enter value"></input>
+    <button>click me</button>
+    <ul>
+    <li>{item}</li>
+    </ul>
+
     </div>
   );
 }
