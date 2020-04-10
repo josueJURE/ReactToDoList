@@ -31,7 +31,9 @@ function App() {
 
     >click me</button>
     <ul>
-    <li>{element}</li>
+    {element.map(toDoItems => {
+      return <li>{toDoItems}</li>
+    })}
     </ul>
 
     </div>
