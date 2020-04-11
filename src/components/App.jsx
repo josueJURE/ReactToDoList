@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 // import logo from './logo.svg';
+import ToDoItems from "./ToDoItems"
 import './App.css';
 
 function App() {
@@ -31,8 +32,11 @@ function App() {
 
     >click me</button>
     <ul>
-    {element.map(toDoItems => {
-      return <li>{toDoItems}</li>
+    {element.map(listItems => {
+      return <ToDoItems
+      addOn={listItems}
+
+      />
     })}
     </ul>
 
