@@ -15,8 +15,8 @@ function App() {
   function handleClick() {
     setElement(preValue => {
       return [...preValue, item]
-
     });
+    setItem("")
   }
 
 
