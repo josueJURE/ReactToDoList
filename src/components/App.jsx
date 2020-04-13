@@ -19,6 +19,15 @@ function App() {
     });
     setItem("")
   }
+  function removeItems(id) {
+    setElement(preValue => {
+      return preValue.filter(
+        (item, index) => {
+          return id !==index
+        }
+      )
+    })
+  }
 
 
   return (
@@ -32,9 +41,12 @@ function App() {
 
     >click me</button>
     <ul>
-    {element.map(listItems => {
+    {element.map((listItems, index) => {
       return <ToDoItems
+      key={index}
+      id={index}
       addOn={listItems}
+      remove={removeItems}
 
       />
     })}

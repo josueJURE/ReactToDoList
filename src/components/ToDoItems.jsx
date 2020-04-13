@@ -1,19 +1,15 @@
-import React, {useState} from "react"
+import React  from "react"
 
 function ToDoItems(props) {
-  const [line, setLine] = useState(false);
 
-  function handleStyle() {
-    setLine(preBoolean => {
-      return !preBoolean
-    })
-  }
+
+
 
 
 
   return <li
-  style={{textDecoration: line ? "line-through" : "none" }}
-  onClick={handleStyle}
+
+  onClick={() => {props.remove(props.id)} }
 
   >{props.addOn}</li>
 }
