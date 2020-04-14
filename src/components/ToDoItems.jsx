@@ -7,7 +7,7 @@ function ToDoItems(props) {
 
 
 
-  return <li
+  return <li 
 
   onClick={() => {props.remove(props.id)} }
 

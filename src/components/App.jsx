@@ -32,10 +32,10 @@ function App() {
 
   return (
 
-    <div className="App">
+    <div className="app-text-font">
     <h1>My to-do list</h1>
-    <input value={item} onChange={handleChange} placeholder="enter value"></input>
-    <button
+    <input className="app-text-font" value={item} onChange={handleChange} placeholder="enter value"></input>
+    <button className="app-text-font"
 
     onClick={handleClick}
 
