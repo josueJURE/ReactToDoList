@@ -14,9 +14,13 @@ function App() {
   }
 
   function handleClick() {
-    setElement(preValue => {
-      return [...preValue, item]
-    });
+    if ( item === "") {
+      alert("plase enter a value")
+    } else {
+      setElement(preValue => {
+        return [...preValue, item]
+      });
+    }
     setItem("")
   }
   function removeItems(id) {
