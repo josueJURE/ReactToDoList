@@ -1,4 +1,5 @@
 import React  from "react"
+import './App.css';
 
 function ToDoItems(props) {
 
@@ -7,7 +8,9 @@ function ToDoItems(props) {
 
 
 
-  return <li 
+  return <li
+
+  
 
   onClick={() => {props.remove(props.id)} }
 

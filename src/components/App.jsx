@@ -36,6 +36,8 @@ function App() {
 
   return (
 
+
+
     <div className="app-text-font">
     <h1>My to-do list</h1>
     <input className="app-text-font" value={item} onChange={handleChange} placeholder="enter value"></input>
@@ -44,7 +46,7 @@ function App() {
     onClick={handleClick}
 
     >click me</button>
-    <ul>
+    <ul className="to-do-item">
     {element.map((listItems, index) => {
       return <ToDoItems
       key={index}
@@ -55,6 +57,8 @@ function App() {
       />
     })}
     </ul>
+
+
 
     </div>
   );

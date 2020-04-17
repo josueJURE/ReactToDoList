@@ -1,12 +1,29 @@
 body {
 /* background-image: url("./img/images.jpeg"); */
-width: 100px;
-height: 200px;
-background-size: 50%;
-background-repeat: no-repeat;
+
+/* background-color: rgba(45, 45, 45, 0.1); */
+background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+text-align: center;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* ul li .to-do-item {
+  width: 245px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  list-style: none;
+} */
+
+
+li {
+  width: 145px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
