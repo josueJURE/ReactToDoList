@@ -18,6 +18,7 @@ text-align: center;
 
 
 li {
+  transform: skewX(-24deg);
   width: 145px;
   height: 50px;
   border: 1px solid #ccc;
@@ -26,4 +27,25 @@ li {
   margin-bottom: 10px;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+button {
+  border-radius: 5px;
+  color: white;
+  background-color: #0F5897;
+  padding: 5px 10px 8px 10px;
+}
+button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
+  }
+}
+
+input {
+  
 }

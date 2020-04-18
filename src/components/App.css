@@ -1,8 +1,10 @@
 
 li .to-do-item {
+  transform: skewX(-24deg);
   width: 245px;
   height: 200px;
   border: 1px solid #ccc;
   border-radius: 5px;
   list-style: none;
+
 }
