@@ -7,6 +7,7 @@ function App() {
 
   const [item, setItem] = useState("");
   const [element, setElement] = useState([])
+  var day = new Date().getFullYear()
 
   function handleChange(event) {
     var newValue = event.target.value;
@@ -57,6 +58,8 @@ function App() {
       />
     })}
     </ul>
+
+    <footer>Josue copyright {day} </footer>
 
 
 
