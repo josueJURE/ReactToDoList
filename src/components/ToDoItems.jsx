@@ -10,7 +10,7 @@ function ToDoItems(props) {
 
   return <li
 
-  
+
 
   onClick={() => {props.remove(props.id)} }
 

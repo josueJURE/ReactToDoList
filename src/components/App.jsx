@@ -7,7 +7,7 @@ function App() {
 
   const [item, setItem] = useState("");
   const [element, setElement] = useState([])
-  var day = new Date().getFullYear()
+  const day = new Date().getFullYear()
 
   function handleChange(event) {
     var newValue = event.target.value;
@@ -42,6 +42,7 @@ function App() {
     <div className="app-text-font">
     <h1>My to-do list</h1>
     <input className="app-text-font" value={item} onChange={handleChange} placeholder="enter value"></input>
+    <br/>
     <button className="app-text-font"
 
     onClick={handleClick}

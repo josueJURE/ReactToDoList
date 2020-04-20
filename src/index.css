@@ -1,8 +1,22 @@
+/* : root {
+  --gradient: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+    )
+} */
+
+
 body {
 /* background-image: url("./img/images.jpeg"); */
 
 /* background-color: rgba(45, 45, 45, 0.1); */
-background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+background: linear-gradient(to left, grey, white);
+
 text-align: center;
 
 }
@@ -18,7 +32,8 @@ text-align: center;
 
 
 li {
-  transform: skewX(-24deg);
+
+  transform: skewX(-10deg);
   width: 145px;
   height: 50px;
   border: 1px solid #ccc;
@@ -34,6 +49,8 @@ button {
   color: white;
   background-color: #0F5897;
   padding: 5px 10px 8px 10px;
+  width: 250px;
+
 }
 button:hover {
   animation-name: background-color;
@@ -47,7 +64,21 @@ button:hover {
   }
 }
 
+footer {
+  margin-top: 90%;
+}
+
 h1 {
   transform: skewX(-24deg);
+}
 
+input {
+  width: 250px;
+  border-radius: 5px;
+
+}
+
+[placeholder="enter value"] {
+  text-align: center;
+  background-image: linear-gradient(to right, gray, white);
 }
