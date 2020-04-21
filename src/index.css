@@ -1,4 +1,4 @@
-/* : root {
+: root {
   --gradient: linear-gradient(
     45deg,
     #845ec2,
@@ -8,7 +8,7 @@
     #ffc75f,
     #f9f871
     )
-} */
+}
 
 
 body {
@@ -16,6 +16,7 @@ body {
 
 /* background-color: rgba(45, 45, 45, 0.1); */
 background: linear-gradient(to left, grey, white);
+
 
 text-align: center;
 
@@ -32,7 +33,6 @@ text-align: center;
 
 
 li {
-
   transform: skewX(-10deg);
   width: 145px;
   height: 50px;
@@ -42,6 +42,12 @@ li {
   margin-bottom: 10px;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition-duration: 1000ms;
+  transition-property:transform;
+}
+
+li:hover {
+  transform: rotate(2deg);
 }
 
 button {
