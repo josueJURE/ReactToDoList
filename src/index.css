@@ -78,6 +78,14 @@ h1 {
   transform: skewX(-24deg);
 }
 
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+}
+
+
 input {
   width: 250px;
   border-radius: 5px;

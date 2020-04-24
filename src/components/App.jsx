@@ -60,6 +60,8 @@ function App() {
     })}
     </ul>
 
+
+
     <footer>Josue copyright {day} </footer>
 
 
